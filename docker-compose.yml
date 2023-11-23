@@ -7,8 +7,6 @@ services:
       volumes:
           - ./data:/var/lib/postgresql
       environment:
-        - POSRGRESQL_DB=db
-        - POSRGRESQL_USER=user
-        - POSRGRESQL_PASSWORD=password
-
-
+        - POSRGRESQL_DB=app
+        - POSRGRESQL_USER=app
+        - POSRGRESQL_PASSWORD=9mREsvXDs9Gk89Ef
