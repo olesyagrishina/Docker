@@ -1,7 +1,12 @@
 version: '3.7'
 services:
-  node-app:
-    build: .
-    image: node-app:1.0
-    ports:
-      - '9999:9999'
+    postgres:
+      image: postgres:latest
+      ports:
+          - '3306:3306'
+      volumes:
+          - ./data:/var/lib/postgres
+      environment:
+        - POSTGRES_DB=app
+        - POSTGRES_USER=app
+        - POSTGRES_PASSWORD=9mREsvXDs9Gk89Ef
