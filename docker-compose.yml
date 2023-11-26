@@ -1,12 +1,12 @@
 version: '3.7'
 services:
-    postgresql:
-      image: postgresql:12-alpine
+    postgres:
+      image: postgres:12-alpine
       ports:
           - '3306:3306'
       volumes:
-          - ./data:/var/lib/postgresql
+          - ./data:/var/lib/postgres
       environment:
-        - POSRGRESQL_DB=app
-        - POSRGRESQL_USER=app
-        - POSRGRESQL_PASSWORD=9mREsvXDs9Gk89Ef
+        - POSTGRES_DB=app
+        - POSTGRES_USER=app
+        - POSTGRES_PASSWORD=9mREsvXDs9Gk89Ef
